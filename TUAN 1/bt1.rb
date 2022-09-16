@@ -29,5 +29,5 @@ for i in 1..100 do
         puts i
         sum=sum+i
     end
-    print "Tong cac so chia het cho 5 tu 1 -100: ", sum
 end
+print "Tong cac so chia het cho 5 tu 1 -100: ", sum
