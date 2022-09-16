@@ -7,7 +7,7 @@ c_234 = gets.chomp.to_i
 if (a_234 + b_234 > c_234) && (a_234 + c_234 > b_234) && (b_234 + c_234 > a_234)
     puts "Đây là 3 cạnh của tam giác"
     puts "Chu vi tam giác: #{a_234 + b_234 + c_234}"
-    p = (a_234 + b_234 + c_234) / 2 
+    p = (a_234 + b_234 + c) / 2 
     puts "Diện tích tam giác: #{Math.sqrt(p*(p-a_234)*(p-b_234)*(p-c_234))}"
 else
     puts "Đây không phải là 3 cạnh của tam giác"
