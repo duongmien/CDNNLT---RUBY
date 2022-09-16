@@ -21,3 +21,13 @@ elsif num_1.to_i < num_2.to_i
 else
     puts "Hai số có giá trị bằng nhau"
 end
+
+#Bai tap 16/08/2022
+sum=0
+for i in 1..100 do
+    if i%5==0
+        puts i
+        sum=sum+i
+    end
+    print "Tong cac so chia het cho 5 tu 1 -100: ", sum
+end
