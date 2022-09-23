@@ -45,14 +45,20 @@ student3 = Student.new("Dương Anh", "Male", 168, 65, "0946794778","duongthimie
 student4 = Student.new("Nguyễn Thị Hồng", "Male", 168, 65, "0946794778","duongthimien@gmail.com", "black", "1911505310234", "19T2", "UTE UDN", 10.0)
 
 stds = [student, student2, student3, student4]
+puts "Điểm trung bình trước khi sắp xếp:"
+puts"---------------------------"
+stds.each do |single|
+    single.show()
+    puts"---------------------------"
+end
 
+puts "Điểm trung bình sau khi sắp xếp:"
+puts"---------------------------"
 stds = stds.sort_by!{|a| a.grade}
-
 stds = stds.reverse
-
 i = 1
 stds.each do |s|
-  puts "#{i}: #{s.name}"
+  puts "Vị trí thứ #{i}: #{s.id} - #{s.name}"
   puts s.grade.round(2)
   i+=1
 end
