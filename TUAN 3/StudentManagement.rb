@@ -39,10 +39,10 @@ class Student < Human
     puts "Average grade of student: #{grade.round(2)}"
   end
 end
-student = Student.new("Dương Thị Miên", "Male", 168, 65, "0946794778","duongthimien@gmail.com", "black", "1911505310234", "19T2", "UTE UDN", 9.7256)
-student2 = Student.new("Dương Thị Ngân", "Male", 168, 65, "0946794778","duongthimien@gmail.com", "black", "1911505310234", "19T2", "UTE UDN", 9)
+student = Student.new("Dương Thị Miên", "Female", 168, 65, "0946794778","duongthimien@gmail.com", "black", "1911505310234", "19T2", "UTE UDN", 9.7256)
+student2 = Student.new("Dương Thị Ngân", "Female", 168, 65, "0946794778","duongthimien@gmail.com", "black", "1911505310234", "19T2", "UTE UDN", 9)
 student3 = Student.new("Dương Anh", "Male", 168, 65, "0946794778","duongthimien@gmail.com", "black", "1911505310234", "19T2", "UTE UDN", 8.78)
-student4 = Student.new("Nguyễn Thị Hồng", "Male", 168, 65, "0946794778","duongthimien@gmail.com", "black", "1911505310234", "19T2", "UTE UDN", 10.0)
+student4 = Student.new("Nguyễn Thị Hồng", "Female", 168, 65, "0946794778","duongthimien@gmail.com", "black", "1911505310234", "19T2", "UTE UDN", 10.0)
 
 stds = [student, student2, student3, student4]
 puts "Điểm trung bình trước khi sắp xếp:"
