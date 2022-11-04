@@ -1,0 +1,32 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Bookmanage_146</h1>
+
+<div id="bookmanages">
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Stt</th>
+        <th scope="col">Mã HS</th>
+        <th scope="col">Lớp</th>
+        <th scope="col">Mã sãch</th>
+        <th scope="col">Tên sách</th>
+        <th scope="col">Tên tác giả</th>
+        <th scope="col">Ngày mượn</th>
+        <th scope="col">Ngày trả</th>
+        <th scope="col">Số ngày</th>
+        <th scope="col">Ghi chú</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @bookmanages.each do |bookmanage| %>
+        <%= render bookmanage %>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<%= link_to "New bookmanage", new_bookmanage_path %>

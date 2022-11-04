@@ -1,0 +1,67 @@
+<%= form_with(model: bookmanage) do |form| %>
+  <% if bookmanage.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(bookmanage.errors.count, "error") %> prohibited this bookmanage from being saved:</h2>
+
+      <ul>
+        <% bookmanage.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :stt, style: "display: block" %>
+    <%= form.number_field :stt %>
+  </div>
+
+  <div>
+    <%= form.label :maHS, style: "display: block" %>
+    <%= form.text_field :maHS %>
+  </div>
+
+  <div>
+    <%= form.label :lop, style: "display: block" %>
+    <%= form.text_field :lop %>
+  </div>
+
+  <div>
+    <%= form.label :maSach, style: "display: block" %>
+    <%= form.text_field :maSach %>
+  </div>
+
+  <div>
+    <%= form.label :tenSach, style: "display: block" %>
+    <%= form.text_field :tenSach %>
+  </div>
+
+  <div>
+    <%= form.label :tenTacGia, style: "display: block" %>
+    <%= form.text_field :tenTacGia %>
+  </div>
+
+  <div>
+    <%= form.label :ngayMuon, style: "display: block" %>
+    <%= form.text_field :ngayMuon %>
+  </div>
+
+  <div>
+    <%= form.label :ngayTra, style: "display: block" %>
+    <%= form.text_field :ngayTra %>
+  </div>
+
+  <div>
+    <%= form.label :soNgay, style: "display: block" %>
+    <%= form.text_field :soNgay %>
+  </div>
+
+  <div>
+    <%= form.label :ghiChu, style: "display: block" %>
+    <%= form.text_field :ghiChu %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

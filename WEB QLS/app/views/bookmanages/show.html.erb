@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @bookmanage %>
+
+<div>
+  <%= link_to "Edit this bookmanage", edit_bookmanage_path(@bookmanage) %> |
+  <%= link_to "Back to bookmanages", bookmanages_path %>
+
+  <%= button_to "Destroy this bookmanage", @bookmanage, method: :delete %>
+</div>
